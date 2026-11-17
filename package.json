@@ -1,0 +1,18 @@
+{
+  "name": "pocket-town",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5183 --strictPort --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --port 5184"
+  },
+  "dependencies": {
+    "@pixiv/three-vrm": "^3.5.5",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.21"
+  }
+}

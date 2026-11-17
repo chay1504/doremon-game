@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pocket Town</title>
+<link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+<canvas id="game"></canvas>
+<div id="vignette"></div>
+<div id="cross"></div>
+<div id="hud" class="hidden">
+  <div id="chip"><span id="chipEmoji">🧒</span><div><b id="chipName">Kenta</b><small id="chipEra">Hinode Town · Today</small></div></div>
+  <div id="stats"><span id="coins">🪙 0</span><span id="clock">10:00</span><span id="fps"></span></div>
+  <div id="objective" class="hidden"><small id="objTitle"></small><div id="objText"></div></div>
+  <div id="effects"></div>
+  <div id="toasts"></div>
+  <div id="prompt" class="hidden"></div>
+  <div id="dialogue" class="hidden"><b id="dlgName"></b><span id="dlgText"></span></div>
+  <div id="hotbar"></div>
+  <div id="keys">Q Pocket · R / click Use · E Talk / Drive · Tab Switch · T Wish · P Episodes · M Map · H Help</div>
+  <div id="speedo" class="hidden"></div>
+</div>
+<div id="layer"></div>
+<div id="banner" class="hidden"><h1 id="banTitle"></h1><p id="banSub"></p></div>
+<div id="modal" class="hidden"><div id="sheet"><header><h2 id="mTitle"></h2><input id="mSearch" placeholder="Search…" autocomplete="off"><button id="mClose">✕</button></header><p id="mSub"></p><div id="mBody"></div></div></div>
+<div id="fade"></div>
+<div id="title">
+  <div class="card">
+    <h1>Pocket Town</h1>
+    <p class="tag">Kenta, Tiko and a pocket full of impossible gadgets.</p>
+    <div id="loadMsg">Building the town…</div>
+    <button id="startBtn" disabled>Play</button>
+    <div class="row"><label>Graphics <select id="quality"><option value="low">Smooth (fastest)</option><option value="med">Balanced</option><option value="high">Pretty</option></select></label></div>
+    <p class="hint">WASD move · Mouse look · Shift run · Space jump · E talk · Q gadgets · Tab change character</p>
+  </div>
+</div>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
